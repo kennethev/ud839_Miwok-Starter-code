@@ -13,11 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_main);
+
+        super.onCreate ( savedInstanceState );
+        setContentView ( R.layout.activity_main );
 
 
-    //Find View that shows numbers category
+        //Find View that shows numbers category
         TextView numbers = (TextView) findViewById ( R.id.numbers );
 
         //Set a click listener on the view
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
         //Find View that shows family members category
-        TextView names = (TextView) findViewById ( R.id.family);
+        TextView names = (TextView) findViewById ( R.id.family );
 
         //Set a click listener on the view
         names.setOnClickListener ( new View.OnClickListener () {
@@ -69,8 +70,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity ( namesIntent );
             }
         } );
-    }
 
+    }
 }
+
+
+
 
 
